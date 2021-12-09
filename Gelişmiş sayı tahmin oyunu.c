@@ -10,9 +10,10 @@ int main()
 	sayi = rand() % 100 + 1;
 
 	printf("Aklindan 1 ile 100 arasi bir sayi tuttum bakalim 5 denemede bulabilecek misin?\n------------------------------------------------------------------------------\n");
-
+	
 	while (1)
 	{
+		
 		printf("%d.Tahmininiz: ", sayac);
 		scanf_s("%d", &tahmin);
 
@@ -29,7 +30,7 @@ int main()
 		}
 		if (sayi == tahmin)
 		{
-			printf("Tebrikler dogru bildiniz...\n");
+			printf("---------------------------\nTebrikler dogru bildiniz...\n---------------------------\n");
 			break;
 		}
 		else if (fark > 5 && fark <= 10)
